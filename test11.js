@@ -1,5 +1,10 @@
-let star = 0;
+var star = '';
 
-for(let i=0; i<5; i=++){
-
+for(var i=0; i<=4; i++){
+  for(var j=0; j<i+1; j++){
+    star +='*';
+  }
+  star +="\n";
 }
+
+console.log(star)

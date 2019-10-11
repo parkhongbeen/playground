@@ -1,14 +1,13 @@
 var star = '';
 
-for(var i=0; i<=4; i++){
+for(var i=1; i<=5; i++){
   for(var j=i; j<=4; j++){
-    star +=' ';
+    star += ' ';
   }
-  for(var k=0; k<=i; k++){
-    star +='*';
+  for(var k=1; k<=i; k++){
+    star += '*';
   }
-  star +='\n';
+star += "\n";
 }
-
 
 console.log(star);

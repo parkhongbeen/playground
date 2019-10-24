@@ -5,7 +5,7 @@ const todos = [
 ];
 
 function getValues(key) {
- let new_todos = todos.map( function(arr){
+ let new_todos = todos.map( arr =>{
     return arr[key]
  })
  return new_todos

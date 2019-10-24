@@ -5,7 +5,7 @@ let todos = [
 ];
 
 function removeTodo(id) {
-  필터사용추천
+todos = todos.filter(todos => todos.id % 2 ===1);
 }
 
 removeTodo(2);

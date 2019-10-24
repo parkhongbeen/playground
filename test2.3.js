@@ -5,7 +5,8 @@ const todos = [
 ];
 
 function sortBy(key) {
-// 슬라이스추천
+let result = todos.slice(0);
+return
 }
 
 console.log(sortBy('id'));

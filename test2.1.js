@@ -8,11 +8,20 @@ function render() {
   let html = '';
 
   todos.forEach(function(todo){
-    html += `<li id="${todo.id}">\n<label><input type="checkbox" ${todo.completed ? " checked" : ""}>${todo.content}</label>\n</li>\n`
-
-  })
-
+    html += `<li id="${todo.id}">
+    <label><input type="checkbox"${todo.completed ? "checked" : ""}>${todo.content}</label>
+</li>\n`;
+  });
   return html;
 }
 
 console.log(render());
+
+
+// let html = '';
+// for(let i=0; i<todos.length; i++) {
+//   const todo = todos[i];
+//   html += `<li id="${todo.id}">
+//   <label><input type="checkbox"${todo.completed ? "checked" : ""}>${todo.content}</label>
+// </li>\n`;
+// }

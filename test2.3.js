@@ -4,9 +4,10 @@ const todos = [
   { id: 1, content: 'Javascript', completed: false }
 ];
 
+let result = todos.slice();
+
 function sortBy(key) {
-let result = todos.slice(0);
-return
+  return result.sort((a, b) => a[key] > b[key] ? 1 : (a[key] < b[key] ? -1 : 0));
 }
 
 console.log(sortBy('id'));

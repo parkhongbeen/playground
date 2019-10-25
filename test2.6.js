@@ -5,13 +5,18 @@ let todos = [
 ];
 
 function toggleCompletedById(id) {
-// map사용추천
-// todos = todos.map(todo =>todo.id === id ? Object.assign(todo, { completed: !todo.completed } : todo))
+
+  function a(new_todo){
+    // todos = todos.map((todo)=>id===todo.id ? Object.assign(todo, {completed : !todo.completed}) : todo); / 물어보기
+  }
 }
+
+
 
 toggleCompletedById(2);
 
 console.log(todos);
+
 /*
 [
   { id: 3, content: 'HTML', completed: false },
@@ -19,3 +24,5 @@ console.log(todos);
   { id: 1, content: 'Javascript', completed: false }
 ]
 */
+
+

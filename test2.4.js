@@ -5,7 +5,7 @@ let todos = [
 ];
 
 function addTodo(newTodo) {
-todos = [newTodo].concat(todos)
+todos = [newTodo, ...todos]
 }
 
 addTodo({ id: 4, content: 'Test', completed: false });
@@ -18,4 +18,4 @@ console.log(todos);
   { id: 2, content: 'CSS', completed: true },
   { id: 1, content: 'Javascript', completed: false }
 ]
-*/
+*/w

@@ -5,12 +5,13 @@ let todos = [
 ];
 
 function removeTodo(id) {
-todos = todos.filter(todos => todos.id % 2 ===1);
+todos = todos.filter(todo => todo.id % 2 === 1);
 }
 
-removeTodo(2);
+removeTodo();
 
 console.log(todos);
+
 /*
 [
   { id: 3, content: 'HTML', completed: false },

@@ -18,10 +18,16 @@ function render() {
 console.log(render());
 
 
-// let html = '';
-// for(let i=0; i<todos.length; i++) {
-//   const todo = todos[i];
-//   html += `<li id="${todo.id}">
-//   <label><input type="checkbox"${todo.completed ? "checked" : ""}>${todo.content}</label>
-// </li>\n`;
-// }
+/*
+<li id="3">
+  <label><input type="checkbox">HTML</label>
+</li>
+<li id="2">
+  <label><input type="checkbox" checked>CSS</label>
+</li>
+<li id="1">
+  <label><input type="checkbox">Javascript</label>
+</li>
+*/
+
+

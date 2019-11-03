@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>todo_list V.1.0.0</title>
+  <style>
+    .input_checkbox:checked + .content {
+      text-decoration: line-through;
+    }
+  </style>
+</head>
+<body>
+<input type="text" class="input" placeholder="Enter todo!">
+<ul class="todos"></ul>
+</body>
+<script>
+  const $input = document.querySelector('.input')
+  const $todos = document.querySelector('.todos')
+
+  $input.addEventListener('keypress',function(e) {
+    if(e.keyCode !== 13 || $input.value.trim()==='') return;
+    $todos.innerHTML +=`
+    <li>
+      <label>
+        <input type="checkbox" class="input_checkbox">
+        <span class="content">${$input.value}</span>
+      </label>
+      <button class="remove">X</button>
+    </li>
+    `;
+    $input.value = '';
+  });
+
+  $todos.addEventListener('click', function(e){
+    if(!e.target.classList.contains('remove')) return;
+    $todos.removeChild(e.target.parentNode);
+  });
+
+</script>
+</html>

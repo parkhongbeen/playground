@@ -5,10 +5,7 @@ let todos = [
 ];
 
 function toggleCompletedById(id) {
-
-  function a(new_todo){
-    // todos = todos.map((todo)=>id===todo.id ? Object.assign(todo, {completed : !todo.completed}) : todo); / 물어보기
-  }
+  todos = todos.map(todo => todo.id === id ? {...todo, completed : !todo.completed} : todo );
 }
 
 

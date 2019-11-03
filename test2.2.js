@@ -5,15 +5,9 @@ const todos = [
 ];
 
 function getValues(key) {
- let new_todos = todos.map( arr =>{
-    return arr[key]
- })
- return new_todos
+  return todos.map(todo => todo[key]);
 }
 
 console.log(getValues('id'));
 console.log(getValues('content'));
 console.log(getValues('completed'));
-
-
-// return todos.map((todo, i) => todo[key]);
